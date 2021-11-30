@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="./assets/css/style.min.css">
+   <title>Rein | DragonDev</title>
+</head>
+
+<body class="website">
+   <!--? header -->
+   <header class="header grid wide">
+      <div class="row align-items-center">
+         <div class="col l-3 m-3 s-3">
+            <nav class="header__socials hide-on-mobile hide-on-tablet">
+               <a href="#" class="header__socialsItem text-center"><i class="fab fa-facebook-f"></i></a>
+               <a href="#" class="header__socialsItem text-center"><i class="fab fa-twitter"></i></a>
+               <a href="#" class="header__socialsItem text-center"><i class="fab fa-instagram"></i></a>
+               <a href="#" class="header__socialsItem text-center"><i class="fab fa-pinterest"></i></a>
+            </nav>
+            <button class="header__expandBtn hide-on-pc">
+               <span class="header__expandBtnOpen"></span>
+               <span class="header__expandBtnClose hidden"><i class="fas fa-times"></i></span>
+            </button>
+         </div>
+         <div class="col l-6 m-6 s-6">
+            <div class="header__logo">
+               <img src="./assets/images/logo.png" alt="logo">
+            </div>
+         </div>
+         <div class="col l-3 m-3 s-3">
+            <div class="header__search">
+               <button class="header__searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+         </div>
+         <div class="col l-12 m-0 s-0">
+            <ul class="header__navigation flex-center">
+               <li class="header__navigationItem">
+                  <span>Home</span>
+                  <i class="fas fa-chevron-down"></i>
+                  <nav class="header__navigationItem-Dropdown">
+                     <a href="#" class="header__navigationItem-DropdownLink">Home Post Slider</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Home Posts Carousel</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Home Minimal</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Home Category Carousel</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Home Masonry</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Home Grid with Sidebar</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Home solid background</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Home Advertising Area</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Advertise between posts</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Home Footer with Widgets</a>
+                  </nav>
+               </li>
+               <li class="header__navigationItem">
+                  <span>Header Styles</span>
+                  <i class="fas fa-chevron-down"></i>
+                  <nav class="header__navigationItem-Dropdown">
+                     <a href="#" class="header__navigationItem-DropdownLink">Minimalist Style</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Classic Style</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Notice on Top</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Advertising Area</a>
+                  </nav>
+               </li>
+               <li class="header__navigationItem">
+                  <span>Posts Features</span>
+                  <i class="fas fa-chevron-down"></i>
+                  <nav class="header__navigationItem-Dropdown">
+                     <a href="#" class="header__navigationItem-DropdownLink">Post Formats</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Fullwidth Image</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Classic Image</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Post Pagination</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Fullwidth no Sidebar</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Classic no Sidebar</a>
+                  </nav>
+               </li>
+               <li class="header__navigationItem">
+                  <span>#Tag</span>
+               </li>
+               <li class="header__navigationItem">
+                  <span>Features</span>
+                  <i class="fas fa-chevron-down"></i>
+                  <nav class="header__navigationItem-Dropdown">
+                     <a href="#" class="header__navigationItem-DropdownLink">Style Guide</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Gutenberg Blocks</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Buttons</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Accordions and Tabs</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Columns</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">Alert Messages</a>
+                     <a href="#" class="header__navigationItem-DropdownLink">404</a>
+                  </nav>
+               </li>
+               <li class="header__navigationItem">
+                  <span>Contacst</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </header>
+   <!--? navigation for responsive -->
+   <ul class="navRes__ul">
+      <li class="navRes__li">
+         <div class="navRes__liRowBtn">
+            <span>Home</span>
+            <i class="fas fa-chevron-down"></i>
+         </div>
+         <nav class="navRes__li-Dropdown">
+            <a href="#" class="navRes__li-DropdownLink">Home Post Slider</a>
+            <a href="#" class="navRes__li-DropdownLink">Home Posts Carousel</a>
+            <a href="#" class="navRes__li-DropdownLink">Home Minimal</a>
+            <a href="#" class="navRes__li-DropdownLink">Home Category Carousel</a>
+            <a href="#" class="navRes__li-DropdownLink">Home Masonry</a>
+            <a href="#" class="navRes__li-DropdownLink">Home Grid with Sidebar</a>
+            <a href="#" class="navRes__li-DropdownLink">Home solid background</a>
+            <a href="#" class="navRes__li-DropdownLink">Home Advertising Area</a>
+            <a href="#" class="navRes__li-DropdownLink">Advertise between posts</a>
+            <a href="#" class="navRes__li-DropdownLink">Home Footer with Widgets</a>
+         </nav>
+      </li>
+      <li class="navRes__li">
+         <div class="navRes__liRowBtn">
+            <span>Header Styles</span>
+            <i class="fas fa-chevron-down"></i>
+         </div>
+         <nav class="navRes__li-Dropdown">
+            <a href="#" class="navRes__li-DropdownLink">Minimalist Style</a>
+            <a href="#" class="navRes__li-DropdownLink">Classic Style</a>
+            <a href="#" class="navRes__li-DropdownLink">Notice on Top</a>
+            <a href="#" class="navRes__li-DropdownLink">Advertising Area</a>
+         </nav>
+      </li>
+      <li class="navRes__li">
+         <div class="navRes__liRowBtn">
+            <span>Posts Features</span>
+            <i class="fas fa-chevron-down"></i>
+         </div>
+         <nav class="navRes__li-Dropdown">
+            <a href="#" class="navRes__li-DropdownLink">Post Formats</a>
+            <a href="#" class="navRes__li-DropdownLink">Fullwidth Image</a>
+            <a href="#" class="navRes__li-DropdownLink">Classic Image</a>
+            <a href="#" class="navRes__li-DropdownLink">Post Pagination</a>
+            <a href="#" class="navRes__li-DropdownLink">Fullwidth no Sidebar</a>
+            <a href="#" class="navRes__li-DropdownLink">Classic no Sidebar</a>
+         </nav>
+      </li>
+      <li class="navRes__li">
+         <span>#Tag</span>
+      </li>
+      <li class="navRes__li">
+         <div class="navRes__liRowBtn">
+            <span>Features</span>
+            <i class="fas fa-chevron-down"></i>
+         </div>
+         <nav class="navRes__li-Dropdown">
+            <a href="#" class="navRes__li-DropdownLink">Style Guide</a>
+            <a href="#" class="navRes__li-DropdownLink">Gutenberg Blocks</a>
+            <a href="#" class="navRes__li-DropdownLink">Buttons</a>
+            <a href="#" class="navRes__li-DropdownLink">Accordions and Tabs</a>
+            <a href="#" class="navRes__li-DropdownLink">Columns</a>
+            <a href="#" class="navRes__li-DropdownLink">Alert Messages</a>
+            <a href="#" class="navRes__li-DropdownLink">404</a>
+         </nav>
+      </li>
+      <li class="navRes__li">
+         <span>Contacst</span>
+      </li>
+   </ul>
+   <!--? main -->
+   <main class="main">
+      <!--? main slider -->
+      <section class="slider">
+         <button class="tag-button pink margin-center">Featured</button>
+         <!-- slider list -->
+         <div class="slider__list">
+            <div data-index="0" class="slider__item active"
+               style="background-image: linear-gradient(#00000050, #00000050), url(./assets/images/slider-1-op.jpg);">
+               <div class="slider__itemContent">
+                  <h5 class="slider__itemHeading">
+                     <a href="#">Far far away & behind the word mountains</a>
+                  </h5>
+                  <div class="mini-profile">
+                     <div class="mini-profile__image">
+                        <img src="./assets/images/avatar-2-op.jpg" alt="avatar">
+                     </div>
+                     <h3 class="mini-profile__name">Mary Buzard</h3>
+                     <span>&#9670;</span>
+                     <time class="mini-profile__date">August 15, 2021</time>
+                  </div>
+               </div>
+            </div>
+            <div data-index="1" class="slider__item"
+               style="background-image: linear-gradient(#00000050, #00000050), url(./assets/images/slider-2-op.jpg);">
+               <div class="slider__itemContent">
+                  <h5 class="slider__itemHeading">
+                     <a href="#">Apps & integrations, the correct way to use gadgets</a>
+                  </h5>
+                  <div class="mini-profile">
+                     <div class="mini-profile__image">
+                        <img src="./assets/images/avatar-1-op.jpg" alt="avatar">
+                     </div>
+                     <h3 class="mini-profile__name">Jonathan Doe</h3>
+                     <span>&#9670;</span>
+                     <time class="mini-profile__date">July 25, 2021</time>
+                  </div>
+               </div>
+            </div>
+            <div data-index="2" class="slider__item"
+               style="background-image: linear-gradient(#00000050, #00000050), url(./assets/images/slider-3-op.jpg);">
+               <div class="slider__itemContent">
+                  <h5 class="slider__itemHeading">
+                     <a href="#">Apps & integrations, the correct way to use gadgets</a>
+                  </h5>
+                  <div class="mini-profile">
+                     <div class="mini-profile__image">
+                        <img src="./assets/images/avatar-1-op.jpg" alt="avatar">
+                     </div>
+                     <h3 class="mini-profile__name">Jonathan Doe</h3>
+                     <span>&#9670;</span>
+                     <time class="mini-profile__date">July 25, 2021</time>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <button class="primary-button margin-center slider__continueButton hide-on-mobile">Continue Reading</button>
+         <div class="slider__sliderBtnWrapper">
+            <button class="slider__sliderBtn active" data-index="0"></button>
+            <button class="slider__sliderBtn" data-index="1"></button>
+            <button class="slider__sliderBtn" data-index="2"></button>
+         </div>
+      </section>
+      <!--? main content -->
+      <section class="content grid wide">
+         <div class="row">
+            <div class="col l-8 m-12 s-12 content__colLeft">
+               <!--? left -->
+               <div class="contentLeft">
+                  <!--? posts -->
+                  <section class="posts">
+                     <!-- posts list -->
+                     <ul class="posts__list">
+                        <li class="posts__item">
+                           <div class="row">
+                              <div class="col l-5 m-5 s-12">
+                                 <div class="posts__itemImage"
+                                    style="background-image: url('./assets/images/post-0.jpg');">
+                                 </div>
+                              </div>
+                              <div class="col l-7 m-7 s-12">
+                                 <div class="posts__itemContent">
+                                    <div class="posts__itemHeader">
+                                       <button class="tag-button purple">Life style</button>
+                                       <div class="posts__itemHeaderRight">
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-comment"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                1 Comment
+                                             </span>
+                                          </button>
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-fire"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                9638 Views
+                                             </span>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <h5 class="posts__itemHeading">
+                                       <a href="#">
+                                          The spectacle before us was indeed sublime
+                                       </a>
+                                    </h5>
+                                    <p class="posts__itemPara">
+                                       We know that first impressions are important, so we’ve populated your new site
+                                       with some initial getting started posts that will…
+                                    </p>
+                                    <div class="posts__itemProfile">
+                                       <div class="mini-profile">
+                                          <div class="mini-profile__image">
+                                             <img src="./assets/images/avatar-1-op.jpg" alt="avatar">
+                                          </div>
+                                          <h3 class="mini-profile__name">Jonathan Doe</h3>
+                                          <span>&#9670;</span>
+                                          <time class="mini-profile__date">July 25, 2021</time>
+                                       </div>
+                                    </div>
+                                    <button class="primary-button posts__itemContinueButton">Continue Reading</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="posts__item">
+                           <div class="row">
+                              <div class="col l-5 m-5 s-12">
+                                 <div class="posts__itemImage"
+                                    style="background-image: url('./assets/images/post-1.jpg');">
+                                 </div>
+                              </div>
+                              <div class="col l-7 m-7 s-12">
+                                 <div class="posts__itemContent">
+                                    <div class="posts__itemHeader">
+                                       <button class="tag-button crimson">Music</button>
+                                       <div class="posts__itemHeaderRight">
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-comment"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                0 Comment
+                                             </span>
+                                          </button>
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-fire"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                9638 Views
+                                             </span>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <h5 class="posts__itemHeading">
+                                       <a href="#">
+                                          Musical improvisation is the spontaneous music
+                                       </a>
+                                    </h5>
+                                    <p class="posts__itemPara">
+                                       It was one of the worst storms to hit London since God knows when. The thunder
+                                       rolled, lightning flashed…
+                                    </p>
+                                    <div class="posts__itemProfile">
+                                       <div class="mini-profile">
+                                          <div class="mini-profile__image">
+                                             <img src="./assets/images/avatar-2-op.jpg" alt="avatar">
+                                          </div>
+                                          <h3 class="mini-profile__name">Mary Buzard</h3>
+                                          <span>&#9670;</span>
+                                          <time class="mini-profile__date">July 19, 2021</time>
+                                       </div>
+                                    </div>
+                                    <button class="primary-button posts__itemContinueButton">Continue Reading</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="posts__item">
+                           <div class="row">
+                              <div class="col l-5 m-5 s-12">
+                                 <div class="posts__itemImage"
+                                    style="background-image: url('./assets/images/post-2.jpg');">
+                                 </div>
+                              </div>
+                              <div class="col l-7 m-7 s-12">
+                                 <div class="posts__itemContent">
+                                    <div class="posts__itemHeader">
+                                       <button class="tag-button green">Health</button>
+                                       <div class="posts__itemHeaderRight">
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-comment"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                0 Comment
+                                             </span>
+                                          </button>
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-fire"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                4134 Views
+                                             </span>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <h5 class="posts__itemHeading">
+                                       <a href="#">
+                                          The meaning of health has evolved over time
+                                       </a>
+                                    </h5>
+                                    <p class="posts__itemPara">
+                                       In keeping with the biomedical perspective, early definitions of health focused
+                                       on the theme of the body’s ability to…
+                                    </p>
+                                    <div class="posts__itemProfile">
+                                       <div class="mini-profile">
+                                          <div class="mini-profile__image">
+                                             <img src="./assets/images/avatar-1-op.jpg" alt="avatar">
+                                          </div>
+                                          <h3 class="mini-profile__name">Mary Buzard</h3>
+                                          <span>&#9670;</span>
+                                          <time class="mini-profile__date">July 26, 2021</time>
+                                       </div>
+                                    </div>
+                                    <button class="primary-button posts__itemContinueButton">Continue Reading</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="posts__item">
+                           <div class="row">
+                              <div class="col l-5 m-5 s-12">
+                                 <div class="posts__itemImage"
+                                    style="background-image: url('./assets/images/post-3.jpg');">
+                                 </div>
+                              </div>
+                              <div class="col l-7 m-7 s-12">
+                                 <div class="posts__itemContent">
+                                    <div class="posts__itemHeader">
+                                       <button class="tag-button blue">Travel</button>
+                                       <div class="posts__itemHeaderRight">
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-comment"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                0 Comment
+                                             </span>
+                                          </button>
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-fire"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                2562 Views
+                                             </span>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <h5 class="posts__itemHeading">
+                                       <a href="#">
+                                          5 Spanish Cities That Will Make You Fall In Love
+                                       </a>
+                                    </h5>
+                                    <p class="posts__itemPara">
+                                       Spain is home to some of the most stunning architecture in Europe, known
+                                       throughout the world for its distinguishable…
+                                    </p>
+                                    <div class="posts__itemProfile">
+                                       <div class="mini-profile">
+                                          <div class="mini-profile__image">
+                                             <img src="./assets/images/avatar-2-op.jpg" alt="avatar">
+                                          </div>
+                                          <h3 class="mini-profile__name">Jonathan Doe</h3>
+                                          <span>&#9670;</span>
+                                          <time class="mini-profile__date">July 25, 2021</time>
+                                       </div>
+                                    </div>
+                                    <button class="primary-button posts__itemContinueButton">Continue Reading</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="posts__item">
+                           <div class="row">
+                              <div class="col l-5 m-5 s-12">
+                                 <div class="posts__itemImage"
+                                    style="background-image: url('./assets/images/post-4.jpg');">
+                                 </div>
+                              </div>
+                              <div class="col l-7 m-7 s-12">
+                                 <div class="posts__itemContent">
+                                    <div class="posts__itemHeader">
+                                       <button class="tag-button blue">Travel</button>
+                                       <div class="posts__itemHeaderRight">
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-comment"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                0 Comment
+                                             </span>
+                                          </button>
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-fire"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                1935 Views
+                                             </span>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <h5 class="posts__itemHeading">
+                                       <a href="#">
+                                          A small river named Duden flows by their place
+                                       </a>
+                                    </h5>
+                                    <p class="posts__itemPara">
+                                       The Ghost editor has everything you need to fully optimise your content. This is
+                                       where you can add tags…
+                                    </p>
+                                    <div class="posts__itemProfile">
+                                       <div class="mini-profile">
+                                          <div class="mini-profile__image">
+                                             <img src="./assets/images/avatar-1-op.jpg" alt="avatar">
+                                          </div>
+                                          <h3 class="mini-profile__name">Jonathan Doe</h3>
+                                          <span>&#9670;</span>
+                                          <time class="mini-profile__date">July 25, 2021</time>
+                                       </div>
+                                    </div>
+                                    <button class="primary-button posts__itemContinueButton">Continue Reading</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="posts__item">
+                           <div class="row">
+                              <div class="col l-5 m-5 s-12">
+                                 <div class="posts__itemImage"
+                                    style="background-image: url('./assets/images/post-5.jpg');">
+                                 </div>
+                              </div>
+                              <div class="col l-7 m-7 s-12">
+                                 <div class="posts__itemContent">
+                                    <div class="posts__itemHeader">
+                                       <button class="tag-button purple">Lifestyle</button>
+                                       <div class="posts__itemHeaderRight">
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-comment"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                0 Comment
+                                             </span>
+                                          </button>
+                                          <button class="posts__itemHeaderCircleBtn">
+                                             <i class="fas fa-fire"></i>
+                                             <span class="posts__itemHeaderCircleMess">
+                                                4227 Views
+                                             </span>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <h5 class="posts__itemHeading">
+                                       <a href="#">
+                                          These Are The 10 Best Restaurants in The World
+                                       </a>
+                                    </h5>
+                                    <p class="posts__itemPara">
+                                       Each year, fine diners, restaurateurs and food writers—I’m in the last group—try
+                                       to read the annual World’s 50 Best…
+                                    </p>
+                                    <div class="posts__itemProfile">
+                                       <div class="mini-profile">
+                                          <div class="mini-profile__image">
+                                             <img src="./assets/images/avatar-1-op.jpg" alt="avatar">
+                                          </div>
+                                          <h3 class="mini-profile__name">Jonathan Doe</h3>
+                                          <span>&#9670;</span>
+                                          <time class="mini-profile__date">July 25, 2021</time>
+                                       </div>
+                                    </div>
+                                    <button class="primary-button posts__itemContinueButton">Continue Reading</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="posts__pages">
+                        <span class="posts__pagesText">Page 1 of 2</span>
+                        <button class="posts__pagesBtn">Next</button>
+                     </div>
+                  </section>
+               </div>
+            </div>
+            <div class="col l-4 m-12 s-0 content__colRight">
+               <!--? right -->
+               <div class="contentRight">
+                  <!--? about -->
+                  <section class="about">
+                     <div class="sectionHeader">
+                        <h2 class="sectionHeaderHeading">About me</h2>
+                        <div class="sectionHeaderSeparate"></div>
+                     </div>
+                     <div class="about__profile">
+                        <div class="about__profileImage">
+                           <img src="./assets/images/avatar-1-op.jpg" alt="avatar">
+                        </div>
+                        <div class="about__profileInfo">
+                           <h5 class="about__profileName">
+                              <a href="#">Jonathan Doe</a>
+                           </h5>
+                           <h6 class="about__profileDesc">Founder & Editor</h6>
+                           <div class="about__profileBtnRow">
+                              <button class="about__profileBtn">
+                                 <i class="fas fa-globe-americas"></i>
+                                 <span>Website: PinkDonut.com</span>
+                              </button>
+                              <button class="about__profileBtn">
+                                 <i class="fab fa-twitter"></i>
+                                 <span>Follow me on Twitter</span>
+                              </button>
+                              <button class="about__profileBtn">
+                                 <i class="fab fa-facebook-f"></i>
+                                 <span>Follow me on Facebook</span>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="about__para">
+                        We are a team working from Chile. We create some Ghost and Wordpress themes for differents
+                        markets, also, we offer live support via our ticket system.
+                     </p>
+                  </section>
+                  <section class="recentPosts">
+                     <div class="sectionHeader">
+                        <h2 class="sectionHeaderHeading">Recent posts</h2>
+                        <div class="sectionHeaderSeparate"></div>
+                     </div>
+                     <ul class="recentPosts__list">
+                        <li class="recentPosts__item">
+                           <div class="recentPosts__itemImage">
+                              <img src="./assets/images/landscape-0.jpg" alt="image">
+                           </div>
+                           <div class="recentPosts__itemInfo">
+                              <h6 class="recentPosts__itemHeading">
+                                 Far far away & behind the word mountains
+                              </h6>
+                              <time class="recentPosts__itemDate">
+                                 <span>&#9670;</span>
+                                 <span>August 15, 2021</span>
+                              </time>
+                           </div>
+                        </li>
+                        <li class="recentPosts__item">
+                           <div class="recentPosts__itemImage">
+                              <img src="./assets/images/landscape-1.jpg" alt="image">
+                           </div>
+                           <div class="recentPosts__itemInfo">
+                              <h6 class="recentPosts__itemHeading">
+                                 The spectacle before us was indeed sublime
+                              </h6>
+                              <time class="recentPosts__itemDate">
+                                 <span>&#9670;</span>
+                                 <span>August 26, 2021</span>
+                              </time>
+                           </div>
+                        </li>
+                        <li class="recentPosts__item">
+                           <div class="recentPosts__itemImage">
+                              <img src="./assets/images/landscape-2.jpg" alt="image">
+                           </div>
+                           <div class="recentPosts__itemInfo">
+                              <h6 class="recentPosts__itemHeading">
+                                 Musical improvisation is the spontaneous music
+                              </h6>
+                              <time class="recentPosts__itemDate">
+                                 <span>&#9670;</span>
+                                 <span>August 21, 2021</span>
+                              </time>
+                           </div>
+                        </li>
+                     </ul>
+                  </section>
+                  <section class="tags">
+                     <div class="sectionHeader">
+                        <h2 class="sectionHeaderHeading">Tag Cloud</h2>
+                        <div class="sectionHeaderSeparate"></div>
+                     </div>
+                     <nav class="tags__list">
+                        <button class="tag-button pink tags__item">Featured</button>
+                        <button class="tag-button green tags__item">Health</button>
+                        <button class="tag-button purple tags__item">Lifestyle</button>
+                        <button class="tag-button crimson tags__item">Music</button>
+                        <button class="tag-button blue tags__item">Technology</button>
+                        <button class="tag-button cyan tags__item">Travel</button>
+                        <button class="tag-button skyblue tags__item">Video</button>
+                     </nav>
+                  </section>
+                  <section class="socials">
+                     <div class="sectionHeader">
+                        <h2 class="sectionHeaderHeading">Social Profiles</h2>
+                        <div class="sectionHeaderSeparate"></div>
+                     </div>
+                     <nav class="socials__list">
+                        <a href="#" class="socials__item twitter">
+                           <span class="socials__itemLeft">
+                              <span class="socials__itemName">Twitter</span>
+                              <span class="socials__itemDesc">Follow me!</span>
+                           </span>
+                           <span class="socials__itemRight"><i class="fab fa-twitter"></i></span>
+                        </a>
+                        <a href="#" class="socials__item facebook">
+                           <span class="socials__itemLeft">
+                              <span class="socials__itemName">Facebook</span>
+                              <span class="socials__itemDesc">Follow me!</span>
+                           </span>
+                           <span class="socials__itemRight"><i class="fab fa-facebook-f"></i></span>
+                        </a>
+                        <a href="#" class="socials__item instagram">
+                           <span class="socials__itemLeft">
+                              <span class="socials__itemName">Instagram</span>
+                              <span class="socials__itemDesc">our photos</span>
+                           </span>
+                           <span class="socials__itemRight"><i class="fab fa-instagram"></i></span>
+                        </a>
+                     </nav>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <!--? footer -->
+   <footer class="footer">
+      <div class="footer__top">
+         <div class="grid wide footer__topContent">
+            <div class="footer__topLogo">
+               <img src="./assets/images/logo.png" alt="logo">
+            </div>
+            <nav class="footer__topNav hide-on-mobile">
+               <a href="#" class="footer__topNavItem">Home</a>
+               <a href="#" class="footer__topNavItem">Features</a>
+               <a href="#" class="footer__topNavItem">Terms and Conditions</a>
+               <a href="#" class="footer__topNavItem">Privacy Policy</a>
+               <a href="#" class="footer__topNavItem">Contacts</a>
+            </nav>
+         </div>
+      </div>
+      <div class="footer__mid">
+         <div class="grid wide">
+            <div class="row footer__midContent">
+               <div class="col l-4 m-5 s-12">
+                  <div class="footer__midSocials">
+                     <div class="footer__midHeader">
+                        <span>Follow me!</span>
+                        <span class="footer__separate"></span>
+                     </div>
+                     <nav class="footer__midSocialsList">
+                        <a class="footer__midSocialsItem">
+                           <i class="fab fa-twitter twitter"></i>
+                           <span>Twitter</span>
+                        </a>
+                        <a class="footer__midSocialsItem">
+                           <i class="fab fa-instagram instagram"></i>
+                           <span>Instagram</span>
+                        </a>
+                        <a class="footer__midSocialsItem">
+                           <i class="fab fa-facebook-f facebook"></i>
+                           <span>Facebook</span>
+                        </a>
+                        <a class="footer__midSocialsItem">
+                           <i class="fab fa-pinterest pinterest"></i>
+                           <span>Pinterest</span>
+                        </a>
+                     </nav>
+                  </div>
+               </div>
+               <div class="col l-8 m-7 s-12 footer__midContentColRight">
+                  <div class="row footer__midContentRight">
+                     <div class="col l-7 m-12 s-12">
+                        <div class="footer__midSubscribe">
+                           <div class="footer__midHeader">
+                              <span>Subscribe to Rein</span>
+                              <span class="footer__separate"></span>
+                           </div>
+                           <p>Get the latest posts delivered right to your email.</p>
+                        </div>
+                     </div>
+                     <div class="col l-5 m-12 s-12">
+                        <form class="footer__midForm">
+                           <input type="text" class="footer__midFormInput" placeholder="Enter your email address">
+                           <button class="footer__midFormBtn">
+                              <i class="fas fa-paper-plane"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer__bottom">
+         <div class="grid wide footer__bottomContent">
+            <p>Published with <a href="#">DragonDev</a> </p>
+            <button class="footer__bottomBackToTopBtn">
+               Back to top
+               <i class="fas fa-chevron-up"></i>
+            </button>
+         </div>
+      </div>
+   </footer>
+   <script src="./assets/javascript/script.min.js" defer></script>
+</body>
+
+</html>
